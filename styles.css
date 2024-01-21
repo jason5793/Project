@@ -1,0 +1,52 @@
+body{
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+}
+h1{
+    font: bold;
+    font-family:cursive;
+    cursor: pointer;
+    color: rgb(223, 18, 18);
+}
+.pricing-container{
+    background-color: rgb(17, 227, 227);
+    display: flex;
+    justify-content: space-around;
+    margin: auto right;
+}
+.pricing-card{
+    width:40%,
+    padding: 20px;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+    border-radius 10px;
+    text-align:center;
+    transition: 0.4s;
+}
+.pricing-card:hover{
+    box-shadow: 0 0 20px rgb(133, 255, 33);
+}
+.selected{
+    border: 0 0 20px rgb(145,48,225);
+}.price{
+
+}
+.refresh{
+    background-color: cyan;
+    color:green;
+    padding: 20 10;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.4;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.refresh:hover{
+    background-color:gold;
+}
+.current-togle{
+    text-align: center;
+    margin:20px;
+}
+#currency-select,.refresh{
+    margin-top: 10px;
+}

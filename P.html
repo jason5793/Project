@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Your Product Pricing</title>
+</head>
+
+<body>
+    <h1>choose your plan</h1>
+    <div class="pricing-container">
+        <div class="pricing-card" id="basic-plan">
+            <h2>Basic Plan</h2>
+            <p class="price" data-currency="USD">$9.99/month</p>
+            <ul><li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum fugit ab cumque odio odit quibusdam tempora, corrupti
+                voluptas cupiditate illo adipisci unde facilis voluptatem aspernatur esse maxime consequatur expedita nesciunt.</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum fugit ab cumque odio odit quibusdam tempora, corrupti
+                        voluptas cupiditate illo adipisci unde facilis voluptatem aspernatur esse maxime consequatur expedita nesciunt.</li>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum fugit ab cumque odio odit quibusdam tempora, corrupti
+                                voluptas cupiditate illo adipisci unde facilis voluptatem aspernatur esse maxime consequatur expedita nesciunt.</li>
+            </ul>
+            <button class="btn" onclick="selectPlan('basic-plan')">Basic-Plan</button>
+        </div>
+
+        <div class="pricing-card" id="pro-plan">
+            <h2>Pro Plan</h2>
+            <p class="price" data-currency="USD">$19.99/month</p>
+            <ul>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum fugit ab cumque odio odit quibusdam tempora, corrupti
+                        voluptas cupiditate illo adipisci unde facilis voluptatem aspernatur esse maxime consequatur expedita nesciunt.</li>  
+                    <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic, quis adipisci laborum sunt velit ipsum? Omnis fuga, nesciunt saepe inventore assumenda modi eligendi, at dolore eius id magni repudiandae nisi!</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum fugit ab cumque odio odit quibusdam tempora, corrupti
+                        voluptas cupiditate illo adipisci unde facilis voluptatem aspernatur esse maxime consequatur expedita nesciunt.</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum fugit ab cumque odio odit quibusdam tempora, corrupti
+                        voluptas cupiditate illo adipisci unde facilis voluptatem aspernatur esse maxime consequatur expedita nesciunt.</li>
+            </ul>
+            <button class="btn" onclick="selectPlan('pro-plan')">Pro-plan</button>
+        </div>
+
+        <div class="pricing-card" id="premium-plan">
+            <h2>Premium Plan</h2>
+            <p class="price" data-currency="USD">$29.99/month</p>
+            <ul>
+    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum fugit ab cumque odio odit quibusdam tempora, corrupti
+        voluptas cupiditate illo adipisci unde facilis voluptatem aspernatur esse maxime consequatur expedita nesciunt.</li><li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum fugit ab cumque odio odit quibusdam tempora, corrupti
+                    voluptas cupiditate illo adipisci unde facilis voluptatem aspernatur esse maxime consequatur expedita nesciunt.</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum fugit ab cumque odio odit quibusdam tempora, corrupti
+                    voluptas cupiditate illo adipisci unde facilis voluptatem aspernatur esse maxime consequatur expedita nesciunt.</li>
+                <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur repellat sint nisi consequatur illum ipsa quaerat consequuntur repellendus? Non autem nobis magnam laudantium ad quis similique fugit iusto perferendis temporibus? </li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum fugit ab cumque odio odit quibusdam tempora, corrupti voluptas cupiditate illo adipisci unde facilis voluptatem aspernatur esse maxime consequatur expedita nesciunt.</li>
+            </ul>
+            <button class="btn" onclick="selectPlan('premium-plan')">Premium plan</button>
+        </div>
+    </div>
+
+    <div class="currency-toggle">
+        <label for="currency-select">Select Currency:</label>
+        <select id="currency-select" onchange="changeCurrency()">
+            <option value="USD">USD</option>
+            <option value="EUR">EUR</option>
+            <option value="RS">Rs</Option>
+            <option value="GBP">GBP</option>
+            <option value="AUD">AUD</option>
+            <option value="CAD">CAD</option>
+            <option value="JPY">JPY</option>
+            <option value="CNY">CNY</option>
+        </select>
+        <button class="refresh" onclick="refreshPage()">REFRESH</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
